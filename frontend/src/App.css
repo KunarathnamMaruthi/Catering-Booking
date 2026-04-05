@@ -1,38 +1,90 @@
-.App {
+/* 🌿 Global */
+body {
+  font-family: Arial, sans-serif;
+  background: #eaf5ec;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌿 Container */
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🌿 Card */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 🌿 Title */
+h2 {
+  text-align: center;
+  color: #2e7d32;
+}
+
+/* 🌿 Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* 🌿 Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #2e7d32, #1b5e20);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* 🌿 Booking Cards */
+.booking-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 🌿 Buttons inside booking */
+.booking-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.booking-actions button {
+  width: 48%;
+  font-size: 14px;
+}
+
+/* 🌿 Navbar */
+.navbar {
+  background: #2e7d32;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar a {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
